@@ -1,0 +1,137 @@
+/*
+css 스타일 넣는법
+id로 되어이으면
+#아이디명 {
+ 스타일속성:스타일값
+}
+
+class로 되어있으면
+.클래스명{
+    스타잀속성:스타일값
+}
+
+그냥 태그입력하면
+태그명{
+    스타일속성:스타일값
+}
+
+스타일 먹인 순서는 id -> 클래스 -> 태그명순으로 먹음
+*/
+
+/*ex header 스타일 예시*/
+
+
+#header {
+
+  height: 100px;  
+  margin: 0px;
+}
+
+.mi{
+    display : inline-block; 
+    float: left;
+   
+}
+.second{
+margin: 0px;
+background-color : #00EBFF; 
+clear : both;
+text-align: center;
+}
+
+.mor{
+  margin-left: 220px;
+    text-align:right;
+}
+
+.hc {
+    list-style-type: none;
+     float: right;
+     margin-left: 30px;  
+     text-align: center;
+
+
+}
+
+.hc .lc {
+    float: right;
+
+}
+
+body{
+   margin: 0 auto;
+   width: 770px;
+}
+form{
+    width: 100%;
+}
+.content{
+    overflow: hidden;
+}
+
+.content .c1{
+    display: inline-block; 
+    margin-bottom: 50px; 
+    margin-right: 50px;
+    width:350px;
+}
+
+.content .c2{
+    display: inline-block;
+    margin-bottom: 50px;
+   
+    width:350px
+}
+  .footer {
+  
+    height: 200px;
+    
+    
+    list-style:none;
+      
+    
+    
+   
+
+  }
+  .footer .f{
+ font-size: 20px;
+ float: left;
+margin-left: 30px;  
+
+}
+
+
+
+
+
+
+
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+
+.fe{
+    text-align: center;
+}

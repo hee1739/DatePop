@@ -1,0 +1,152 @@
+/* all */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {font-family: 'Noto Sans KR', sans-serif;}
+
+body{
+    margin: 0;
+}
+.sidebar{
+width: 150px;
+float:left;
+display:inline-block;
+margin-top:50px;
+padding-left:50px;
+margin-right:30px;
+line-height: 50px; 
+/* 세로 가운데 정렬 : line-height와 height값을 동일하게 처리합니다.*/ 
+text-align: center /* 텍스트 가운데 정렬 */
+
+}
+
+.sidebar a{
+	text-decoration : none;
+	color: black;
+	transition : 0.3s;
+}
+
+.sidebar a:hover{
+	text-decoration:underline;
+	color:grey;
+}
+
+.side-element {
+	height:80px;
+	text-decoration-line: none;
+	
+}
+
+.section{
+	width:1080px;
+	margin:0 auto;
+}
+
+.section::after{
+	content:'';
+   display:block;
+   clear:both;
+}
+.contents{
+	float:left;
+	margin-left:20px;
+	margin-top:30px;
+	display:inline-block;
+	padding:10px;
+}
+.userInfo{
+	height:80px;
+	width:800px;
+}
+
+.userInfo .userImg{
+	display:inline;
+	height:50px;
+}
+
+.userInfo .userImg img{
+	width:150px;
+	height:150px;
+	border-radius:50px;
+	padding-left:30px;
+}
+.userInfo .idSet{
+	display:inline-block;
+	height:100px;
+	padding-bottom:50px;
+	line-height:100px;
+	width:600px;
+	
+}
+.idSet span{
+	display:inline-block;
+	width:280px;
+	text-align:right;
+}
+.idSet .userId{
+	
+}
+
+.idSet .userSet{
+	
+}
+
+.userInfo .mailCou{
+	
+}
+
+.userInfo .userEmail{
+	margin-right:30px;
+}
+
+.userInfo .userCouple{
+	boder:1px solid grey;
+}
+
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: #4d4d4d;
+    margin-bottom: 0;
+}
+
+.footer .footerContent{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.footerLinkList ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerLinkList ul{
+    justify-content: space-around;
+}
+
+.footerLinkList ul li{
+    height: 70px;
+    line-height: 70px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.footerLinkList ul li a{
+    text-decoration: none;
+    color: black;
+    color: #cecece;
+    display:block;
+    text-align: center;
+}
+
+.footerLinkList ul li a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+.companyInfo{
+    margin-top: 15px;
+}
+

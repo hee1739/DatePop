@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    width: 1080px;
+    height: 2000px;
+    position: relative;
+}
+
+.mimg{
+background-color:#00EBFF;
+text-align: center;
+}
+
+
+
+.f1{
+font-size: 30px;
+text-align: center;
+margin-top: 20px;
+font-weight: 800px;
+font-family:monospace;
+}
+
+.ide {
+   
+    width: 250px;
+    height: 35px;
+}
+
+.pw1 {
+    width: 250px;
+    height: 35px;
+   
+}
+
+
+.j1{
+    text-align: center;
+
+}
+
+.j2{
+    text-align: center;
+}
+.c1{
+    text-align: center;
+    
+}
+.g1{
+    text-align: center;
+  
+
+}
+.s1{
+    text-align: center;
+    width: 260px;
+    height: 40px;
+    font-weight: lighter;
+}
+
+
+.b1{
+background-color: #0fd3d8;
+width: 400px;
+ height: 50px;
+ text-align: center;
+ border: 0;
+ border-radius: 12px;
+ font-size: 20px;
+ color: aliceblue;
+ transition-duration: 0.5s;
+ box-shadow: 3px black;
+
+}
+.b1:hover {
+background-color: gainsboro
+
+}
+.b1:active {
+    box-shadow: none;
+}
+
+.is1 {
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+.bo1{
+
+background-color:#F2F2F2;
+height: 150px;
+margin-top: 200px;
+text-align: center;
+width: 100%;
+position: absolute;
+bottom: 0;
+margin-bottom: 0%;
+}
+
+.is1{
+    
+    text-decoration: underline;
+    text-underline-position: under;
+  
+}
+
+.checkbox{
+text-align: center;
+
+}
+.allchk{
+    position: relative;
+    right: 100px;
+}
+
+.sub_ex{
+    color: #00EBFF;
+}
+
+.Ex_agree{
+font-weight:bold;
+text-align: center;
+position: relative;
+right: 100px;
+}
+
+.ex_content{
+    cursor: pointer;
+  
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    position: relative;
+}
+
+.allbox{
+    width: 500px; 
+    height: 50px; 
+
+
+}
+.cf0{
+ margin-right: 68px;
+
+}
+
+
+.cf1{
+margin-right: 110px;
+
+}
+.cf2{
+  margin-right: 20px;
+    
+ }
+.cf3{
+ margin-right: 35px;
+    }
+.cf4{
+ margin-right: 0px;
+      
+        }    

@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<c:set var="contextPath" value="${pageContext.servletContext.contextPath}" />
+
+<%
+	request.setCharacterEncoding("UTF-8");
+%>
+    
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>회원 정보 출력</title>
+</head>
+<body>
+	<table border="1" align="center" width="80%">
+		<tr align="center" bgcolor="#98c8fa">
+			<td width="%"><b>아이디</b></td>
+			<td width="%"><b>비밀번호</b></td>
+			<td width="%"><b>이름</b></td>
+			<td width="%"><b>이메일</b></td>
+			<td width="%"><b>가입일</b></td>
+			<td><b>삭제</b></td>
+		</tr>
+		<c:forEach var="member" items="${membersList}">
+			<tr align="center">
+				<td>${member}</td>
+				<td>${member.userName}</td>
+				<td>${member.userPw }</td>
+				<td><a href="${contextPath}/member/removeMember.do?id=${member.userId}">삭제하기</a></td>
+			</tr>
+		</c:forEach>
+	</table>
+	
+	<a href="${contextPath}/member/memberForm.do"><h1 style="text-align: center;">회원가입</h1></a>
+	
+</body>
+<script>
+	window.onload = function(){
+	 	console.log("안녕하세요")
+	 	console.log(`${member}`)
+	}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

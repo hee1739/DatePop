@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+}
+.banner{
+    width: 1080px;
+}
+
+.bannerSlider{
+    width: 1080px;
+    margin: 20px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerImageSlider{
+    display: flex;
+    transition: 0.5s;
+}
+
+.bannerImageSlider img{
+    width: 1080px;
+    height: 360px;
+    transition: 0.5s;
+}
+
+.bannerSlider button{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    font-size: 25px;
+    border: 0;
+    opacity: 0.8;
+}
+
+.prev{
+    top:48%;
+    left:40px;
+    position: absolute;
+}
+.next{
+    top:48%;
+    right:50px;
+    position: absolute;
+}
+
+.popShopNav{
+
+}
+
+.popShopNav ul{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.popShopNav li {
+    flex-wrap: wrap;
+    width: 40%;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+.popShopNav ul li a{
+    text-decoration: none;
+    color: grey;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.popShopNav ul li a:hover{
+    background: #e0e0e0;
+    transition: 0.5s;
+}
+
+.todayPopDeal{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.todayPopDeal a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.PopDealList:hover{
+    box-shadow: 0 0 0 1px grey inset;
+    text-decoration: underline !important;
+}
+
+.PopDealList{
+    padding-top: 1px;
+    width: 32%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.listInfo{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.listInfo .region{
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.listInfo .title{
+    display: inline-block;
+    width: 68%;
+    text-align: left;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.listInfo .originPrice{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.listInfo .content{
+    display: inline-block;
+    width: 58%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.listInfo .salePrice{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+
+}
+
+.listInfo .salePrice{
+    font-size: 18px;
+}
+
+.listInfo .salePrice strong{
+    color:aqua;
+    font-weight: bold;
+}
+
+.PopDealList .listInfo .originPrice{
+    text-decoration: line-through;
+}
+
+.PopDealList:last-child{
+    margin-right: 0;
+}
+
+.listImg{
+    position: relative;
+}
+
+.listImg img{
+    width: 99%;
+}
+
+.listImg .saleInfo{
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    background-color: #00fff5;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.listPage{
+    text-align: center;
+    width: 1080px;
+    margin: 10px auto 10px auto;
+}
+
+.listPageUl{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+.listPageUl button{
+    border: 0;
+    background-color: white;
+}
+
+
+.listPageUl li{
+    display: block;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+}
+
+.listPageUl li a:hover{
+    color: #a1a1a1;
+}
+
+.listPageUl li:nth-child(2){
+    background-color: #f8af00;
+}
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: #4d4d4d;
+    margin-bottom: 0;
+}
+
+.footer .footerContent{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.footerLinkList ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerLinkList ul{
+    justify-content: space-around;
+}
+
+.footerLinkList ul li{
+    height: 70px;
+    line-height: 70px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.footerLinkList ul li a{
+    text-decoration: none;
+    color: black;
+    color: #cecece;
+    display:block;
+    text-align: center;
+}
+
+.footerLinkList ul li a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+.companyInfo{
+    margin-top: 15px;
+}
+
+
+/*여기서부터 소스긁어가기*/
+body{
+    position: relative;
+}
+
+.remote{
+    width: 200px;
+    height: 200px;
+    top: 70px;
+    right: 10px;
+    background-color: #cc99ef;
+    position: fixed;
+}

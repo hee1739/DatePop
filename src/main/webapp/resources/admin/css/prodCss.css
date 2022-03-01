@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+table {	border-collapse: collapse; border-top:3px solid black; border-bottom:3px solid black;width:100%; min-width:750px; margin: 0 auto;
+		padding:5px;}
+
+table td,table th{text-align: center;padding:5px;border:1px solid black;}
+
+table th{background: #ddd;}
+
+button{width:50px; border:1px solid grey;}
+
+button:hover{background:#ddd;}

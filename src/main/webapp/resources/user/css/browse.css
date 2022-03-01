@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+}
+.banner{
+    width: 1080px;
+}
+
+.bannerSlider{
+    width: 1080px;
+    margin: 20px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerImageSlider{
+    display: flex;
+    transition: 0.5s;
+}
+
+.bannerImageSlider img{
+    width: 1080px;
+    height: 360px;
+    transition: 0.5s;
+}
+
+.bannerSlider button{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    font-size: 25px;
+    border: 0;
+    opacity: 0.8;
+}
+
+.prev{
+    top:48%;
+    left:40px;
+    position: absolute;
+}
+.next{
+    top:48%;
+    right:50px;
+    position: absolute;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 1080px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.container .item{
+    background-image: url("../../assert/img/banner/date3.png");
+    width: 24%;
+    margin-right: 1px;
+    height: 210px;
+    border: 1px solid black;
+    background-color: #cc99ef;
+    text-align: center;
+}
+
+.container a:hover{
+    text-decoration: underline;
+
+
+}
+
+.container span{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container .align{
+    height: 70%;
+}
+
+.container .ko_item{
+
+ }
+
+.container .en_item{
+
+}
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: #4d4d4d;
+    margin-bottom: 0;
+}
+
+.footer .footerContent{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.footerLinkList ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerLinkList ul{
+    justify-content: space-around;
+}
+
+.footerLinkList ul li{
+    height: 70px;
+    line-height: 70px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.footerLinkList ul li a{
+    text-decoration: none;
+    color: black;
+    color: #cecece;
+    display:block;
+    text-align: center;
+}
+
+.footerLinkList ul li a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+.companyInfo{
+    margin-top: 15px;
+}
+

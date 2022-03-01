@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="mapper.popcorn">					<!-- member.xml의 네임스페이스 지정 -->
+
+	<resultMap type="PopcornDTO" id="popcornResult">		<!-- SQL문 실행한 후 반환되는 레코드들을 typeAlias태그에서 지정한 memberVO빈에 저장함. -->
+		<result property="popcornIdx" column="popcorn_idx"/>
+		<result property="userIdx" column="user_idx"/>
+		<result property="popcornFlag" column="popcorn_flag"/>		<!-- 레코드의 컬럼 이름에 대해 memberVO의 같은 속성에 값을 설정함 -->
+		<result property="popcornContents" column="popcorn_contents"/>
+		<result property="enrollDate" column="enroll_date"/>
+		<result property="popcornPoint" column="popcorn_point"/>
+		<result property="popcornTotal" column="popcorn_total"/>
+	</resultMap>
+
+
+	<insert id="insertPopcorn">
+		<![CDATA[
+		insert into qwer.tb_popcorn (user_idx, popcorn_flag, popcorn_contents, popcorn_total) values(#{userIdx}, #{popcornFlag}, #{popcornContents}, #{popcornTotal})
+		]]>
+	</insert>
+	
+	<select id="selectPopcorn" resultMap="popcornResult" parameterType="Long">
+		<![CDATA[
+			select * from qwer.tb_popcorn where user_idx = #{userIdx}
+		]]>
+	</select>
+	
+	<select id="selectPopcornOne" resultMap="popcornResult" parameterType="Long">
+		<![CDATA[
+			select * from qwer.tb_popcorn where user_idx = #{userIdx} order by enroll_date desc limit 1
+		]]>
+	</select>
+</mapper>  	

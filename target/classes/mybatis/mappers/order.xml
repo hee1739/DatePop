@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="mapper.order">					<!-- member.xml의 네임스페이스 지정 -->
+
+	<resultMap type="OrderDTO" id="orderResult">		<!-- SQL문 실행한 후 반환되는 레코드들을 typeAlias태그에서 지정한 memberVO빈에 저장함. -->
+		<result property="orderIdx" column="order_idx"/>
+		<result property="storeIdx" column="store_idx"/>
+		<result property="userIdx" column="user_idx"/>		<!-- 레코드의 컬럼 이름에 대해 memberVO의 같은 속성에 값을 설정함 -->
+		<result property="totalPrice" column="total_price"/>
+		<result property="orderState" column="order_state"/>
+		<result property="orderDate" column="order_date"/>
+	</resultMap>
+	
+		<insert id="insertOrder">
+			<![CDATA[
+			insert into qwer.tb_order (store_idx, user_idx, total_price, order_state) values(#{storeIdx}, #{userIdx}, #{totalPrice}, #{orderState})
+		]]>
+	</insert>
+
+</mapper>  	

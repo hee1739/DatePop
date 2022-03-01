@@ -1,0 +1,375 @@
+body{
+    margin: 0 auto;
+    width: 670px;
+    background-color: lightgrey;
+}
+
+
+
+.wrapper{
+    width: 100%;
+    height: 2000px;
+
+}
+.header{
+    height: 60px;
+    background-color: white;
+    position: relative;
+}
+.header .btnBackImg{
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.header .title{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner {
+    height: 250px;
+    background-color: white;
+}
+.banner img{
+    width:670px;
+}
+.album{
+    width: 670px;
+    height: 266px;
+    position: relative;
+    overflow: hidden;
+}
+.banner .slideImg{
+    display: flex;
+}
+.banner button {
+    width: 40px;
+    height: 40px;
+    border: 0px;
+}
+.banner button:hover {
+   background-color: white;
+}
+.banner button {
+    background-color: grey;
+}
+.banner .btnImageSlide{
+    position: relative;
+}
+.banner .next{
+    position : absolute;
+    left: 10px;
+    top: -150px;
+}
+.banner .prev{
+    position : absolute;
+    right: 10px;
+    top: -150px;
+}
+
+
+.navbar{
+    height: 50px;
+    background-color: white;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    line-height: 50px;
+    border-bottom: 1px solid grey;
+}
+.navbar ul li{
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+.navbar ul li a{
+    color: black;
+}
+.navbar ul li a:hover{
+    color: aqua;
+    font-weight: bold;
+}
+
+.section1{
+    height: 150px;
+    padding: 25px;
+    background-color: white;
+}
+.section1 span{
+    display: inline-block;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.section_prodName{
+    font-size: 24px;
+    font-weight: bold;
+}
+.section2{
+    height: 350px;
+    background-color: white;
+}
+
+.section_optinal span{
+    border: 1px solid green;
+    border-radius: 130px;
+}
+
+.section2 table {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-top:1px solid grey;
+}
+
+.section2 img{
+    width: 15px;
+    height: 15px;
+}
+
+.section2 table td{
+    height: 80px;
+}
+
+.systemReview{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.systemReview img{
+    width:600px;
+    height:250px;
+    margin: 0px;
+}
+
+.systemReview .systemMg {
+    margin: 0px;
+    line-height: 40px;
+    height: 40px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    width: 250px;
+    top:230px;
+    right:190px;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 100px;
+}
+
+.rev_detail{
+    margin-top: 10px;
+    padding-top: 12px;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+
+    margin-bottom: 20px;
+}
+.msg{
+    margin-top: -15px;
+    height: 100px;
+    background-color: white;
+}
+
+.section2 .table_icon {
+    text-align: center;
+    width: 12%;
+}
+.section2 .table_cont {
+    width: 65%;
+}
+.section2 .table_detail {
+    width: 25%;
+}
+
+.section3{
+    margin-top: -20px;
+    height: 380px;
+    padding: 25px;
+}
+.section3 a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.section4{
+    padding: 25px;
+    margin-top: -30px;
+    height: 530px;
+    background-color: white;
+}
+
+.review01{
+    background-color: white;
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.review02{
+    background-color: white;
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.review03{
+    background-color: white;
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.review03 img{
+    width: 200px;
+    height: 100px;
+    top:20px;
+    right: 290px;
+    position: absolute;
+}
+.review03 span{
+    top:40px;
+    right: 170px;
+    position: absolute;
+    font-weight: bold;
+}
+.review03 a:hover{
+    color: black;
+}
+.starPoint i{
+    color: aqua;
+    margin-bottom: 10px;
+}
+
+.nameAndDate {
+    margin-bottom: 25px;
+}
+nameAndDate strong{
+    font-size: 18px;
+}
+
+
+.section4 h5{
+    margin: 0px;
+    font-size: 15px;
+}
+.section5{
+    padding: 15px;
+    height: 480px;
+}
+
+.section5Title {
+    margin-bottom: 20px;
+}
+
+.section5Title strong{
+    font-size: 18px;
+}
+.section6{
+    height: 360px;
+    background-color:oldlace;
+}
+.section7{
+    height: 90px;
+    position: relative;
+    background-color: white;
+}
+
+.section7 img{
+    width: 80px;
+    height: 80px;
+    right:400px;
+    position: absolute;
+}
+
+.section7 .anot{
+    top: 20px;
+    right:210px;
+    position: absolute;
+    color: black;
+}
+
+.section7 .radius{
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    width: 140px;
+    top: 45px;
+    right:240px;
+    border: 1px solid black;
+    border-radius: 100px;
+    position: absolute;
+    font-weight: bold;
+    color: grey;
+}
+.company_info{
+    height: 30px;
+    background-color:white;
+}
+
+.company_info ul{
+    list-style: none;
+    margin: 0px;
+}
+
+.company_info ul li{
+    float: left;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.companyDetail {
+    height: 200px;
+    padding: 30px;
+    background-color: grey;
+    color: lightgrey;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.fix_bottom_menu{
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    right: 852px;
+    bottom: 20px;
+    margin-right: -720px;
+
+
+}
+
+.detail{
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+}
+.fix_bottom_menu .amount{
+    display: inline-block;
+    float: left;
+}
+.fix_bottom_menu .price{
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.purcBtn button{
+    border: 0;
+    clear: both;
+    width: 670px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: aqua;
+    color: white;
+}

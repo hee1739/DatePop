@@ -1,0 +1,308 @@
+body{
+    margin: 0;
+}
+
+main section{
+    width: 1080px;
+}
+
+.browseDetail{
+    width: 1080px;
+    margin: 20px auto 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.browseDetail .container{
+    display: flex;
+
+
+}
+
+.container img{
+    width: 1080px;
+    height: 300px;
+
+}
+button{
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #d08d00;
+    color: white;
+}
+button:hover{
+    background-color: #f8af00;
+    color: #fffcfc;
+}
+
+.prev{
+    position: absolute;
+    top: 125px;
+    left: 20px;
+}
+
+.next{
+    position: absolute;
+    top: 125px;
+    right: 20px;
+}
+.browseContent{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.browseContent .container{
+    display: flex;
+    padding: 15px;
+}
+
+.prodLeft{
+}
+
+.imgList{
+    padding: 5px;
+}
+
+.imgList img{
+    width: 530px;
+    height: 400px;
+}
+
+
+.clientCho{
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 1px solid grey;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 50px;
+    line-height: 50px;
+}
+
+.clientCho span{
+    font-weight: bold;
+}
+
+.clientCho a,
+.clientCho i,
+.clientCho span{
+    padding-right: 8px;
+}
+
+.clientCho a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.clientCho a:after{
+    content: '';
+    border-right: 1px solid grey;
+    margin-left: 15px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+}
+
+.clientCho a:last-child:after{
+    border-right: 0px;
+}
+
+.satisPercent{
+    margin-top: 10px;
+    border: 1px solid grey;
+    height: 50px;
+    line-height: 50px;
+    padding: 20px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.satisPercent .info{
+    width: 60%;
+    display: inline-block;
+}
+
+.prodPercent:after{
+    content: '';
+    border: 1px solid grey;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.satisPercent .info{
+
+}
+
+.satisPercent .info i{
+    margin-right: 6px;
+}
+
+
+.satisPercent .deliveryPercent{
+    width: 19%;
+    display: inline-block;
+}
+
+.satisPercent .prodPercent{
+    width: 19%;
+    display: inline-block;
+}
+
+.prodPercent strong,
+.deliveryPercent strong{
+    color: #f8af00;
+}
+
+.prodRight{
+    width: 550px;
+
+}
+
+.review i,
+.alert i{
+    color: #00fff7;
+}
+
+.contAndPrice div{
+    font-size: 18px;
+}
+
+.reserve .phone{
+    border: 1px solid grey;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 230px;
+    background-color: #4d4d4d;
+    margin-bottom: 0;
+}
+
+.footer .footerContent{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.footerLinkList ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerLinkList ul{
+    justify-content: space-around;
+}
+
+.footerLinkList ul li{
+    height: 70px;
+    line-height: 70px;
+    font-size: 17px;
+    font-weight: 900;
+    width: 100%;
+}
+
+.footerLinkList ul li a{
+    text-decoration: none;
+    color: black;
+    color: #cecece;
+    display:block;
+    text-align: center;
+}
+
+.footerLinkList ul li a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+.companyInfo{
+    margin-top: 15px;
+}
+
+.prodRight{
+   padding: 15px;
+}
+
+.titCont .region {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.titCont .title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.titCont .reserve i{
+    margin-right: 10px;
+}
+
+.titCont .phone{
+    margin-left: 10px;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+}
+
+.menuList{
+    border: 1px solid grey;
+    height: 130px;
+    width: 100%;
+    padding: 2px;
+    line-height: 130px;
+}
+
+.menuList a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuList a:hover{
+    text-decoration: underline;
+    color: grey;
+
+}
+
+.mainMenuDetail .menuList{
+    margin-top: -1px;
+}
+
+.menuList img{
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+}
+
+.menuList span{
+    font-size: 20px;
+}
+
+.menuList .menuTitle,
+.menuList .content,
+.menuList .price{
+}
+
+.contAndPrice{
+    font-size: 20px;
+}
+
+.titCont span,
+.titCont div{
+
+    margin-top: 8px;
+}
+

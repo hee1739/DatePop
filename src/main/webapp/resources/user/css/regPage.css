@@ -1,0 +1,19 @@
+body{
+    margin: 0 auto;
+    width: 670px;
+}
+
+.header{
+    height: 70px;
+    background-color: indigo;
+}
+
+.content{
+    height: 500px;
+    background-color:  burlywood;
+}
+
+.footer{
+    height: 200px;
+    background-color: bisque;
+}

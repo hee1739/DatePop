@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>		
+
+	<definition name="baseLayout" template="/WEB-INF/views/user/inc/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/user/inc/header.jsp" />
+		<put-attribute name="nav" value="/WEB-INF/views/user/inc/nav.jsp" />
+		<put-attribute name="body"  value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/user/inc/footer.jsp" />
+	</definition>
+	
+	<definition name="loginLayout" template="/WEB-INF/views/user/inc/joinLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body"  value="/WEB-INF/views/user/inc/joinmember.jsp"/>
+		<put-attribute name="footer" value="/WEB-INF/views/user/inc/footer.jsp" />
+	</definition>	
+	
+	<definition name="mypageLayout" template="/WEB-INF/views/user/inc/mypage/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/user/inc/header.jsp" />
+		<put-attribute name="nav" value="/WEB-INF/views/user/inc/nav.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/user/inc/mypage/side.jsp" />
+		<put-attribute name="body"  value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/user/inc/footer.jsp" />
+	</definition>
+	
+	<definition name="/user/index" extends="baseLayout">
+		<put-attribute name="title" value="메인페이지"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/index.jsp" />
+	</definition>
+	
+	<definition name="user/index" extends="baseLayout">
+		<put-attribute name="title" value="메인페이지"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/index.jsp" />
+	</definition>
+	
+	<definition name="user/browse" extends="baseLayout">
+		<put-attribute name="title" value="브라우즈"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/browse.jsp" />
+	</definition>
+	
+	<definition name="user/browseDetail" extends="baseLayout">
+		<put-attribute name="title" value="상품상세페이지"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/browseDetail.jsp" />
+	</definition>
+	
+	<definition name="user/joinmember" extends="loginLayout">
+		<put-attribute name="title" value="로그인"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/joinmember.jsp" />
+	</definition>
+	
+	<definition name="user/logmain" extends="loginLayout">
+		<put-attribute name="title" value="로그인"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/logmain.jsp" />
+	</definition>
+	
+	<definition name="user/mailLogin" extends="loginLayout">
+		<put-attribute name="title" value="로그인"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/mailLogin.jsp" />
+	</definition>
+	
+	<definition name="user/mypage" extends="mypageLayout">
+		<put-attribute name="title" value="마이페이지"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/mypage.jsp" />
+	</definition>
+	
+	<definition name="user/joinmember" extends="loginLayout">
+		<put-attribute name="title" value="로그인"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/joinmember.jsp" />
+	</definition>
+	
+	<definition name="user/mypageBuyList" extends="mypageLayout">
+		<put-attribute name="title" value="구매목록"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/mypageBuyList.jsp" />
+	</definition>
+	
+	<definition name="user/mypageMyreview" extends="mypageLayout">
+		<put-attribute name="title" value="후기목록"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/mypageMyreview.jsp" />
+	</definition>
+	
+	<definition name="user/mypagePopcorn" extends="mypageLayout">
+		<put-attribute name="title" value="팝콘"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/mypagePopcorn.jsp" />
+	</definition>
+	
+	<definition name="user/popShop" extends="baseLayout">
+		<put-attribute name="title" value="로그인"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/popShop.jsp" />
+	</definition>
+	
+	<definition name="user/searchpassword" extends="loginLayout">
+		<put-attribute name="title" value="로그인"/>
+		<put-attribute name="body" value="/WEB-INF/views/user/searchpassword.jsp" />
+	</definition>
+	
+	<!-- Admin -->
+	
+	<definition name="AdminLayout" template="/WEB-INF/views/admin/inc/Admin_layout.jsp">
+		<put-attribute name="Admin_title" value="" />
+		<put-attribute name="Admin_layout" value="/WEB-INF/views/admin/inc/admin.jsp" />
+		<put-attribute name="Admin_body" value="" />
+	</definition>
+	
+	<definition name="admin/Admin_productCreate" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_productCreate.jsp" />
+	</definition>
+	
+	<definition name="admin/regProd" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="상품등록테스트페이지"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/regProd.jsp" />
+	</definition>
+
+
+	<definition name="admin/Admin_productList" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_productList.jsp" />
+	</definition>
+	
+	<definition name="admin/Admin_OrderList" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_OrderList.jsp" />
+	</definition>
+	
+	<definition name="admin/Admin_OrderDetail" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_OrderDetail.jsp" />
+	</definition>
+	
+	<definition name="admin/Admin_notice" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_notice.jsp" />
+	</definition>
+	
+	<definition name="admin/Admin_noticeRegist" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_noticeRegist.jsp" />
+	</definition>
+	
+	<definition name="admin/Admin_UserList" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_UserList.jsp" />
+	</definition>
+
+	<definition name="admin/Admin_reviewList" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_reviewList.jsp" />
+	</definition>
+
+	<definition name="admin/Admin_cate" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_cate.jsp" />
+	</definition>
+	
+	<definition name="admin/Admin_UserEdit" extends="AdminLayout">
+		<put-attribute name="Admin_title" value="어드민"/>
+		<put-attribute name="Admin_body" value="/WEB-INF/views/admin/Admin_UserEdit.jsp" />
+	</definition>
+
+	
+	
+</tiles-definitions>
+       
+
+
+
+
+
+
+
+       
